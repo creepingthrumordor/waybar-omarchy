@@ -5,7 +5,7 @@
  ## V1
 
 <p align="center">
-  <img src="showcase1.png" alt="showcase 1">
+  <img src="showcase v1.png" alt="showcase 1">
 </p>
 
 ## V2
