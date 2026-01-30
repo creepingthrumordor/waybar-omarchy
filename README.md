@@ -11,6 +11,6 @@
 ## V2
 
 <p align="center">
-  <img src="showcase v2.png">
+  <img src="showcase v3.png">
 </p>
 
