@@ -19,7 +19,6 @@
     "network",
     "bluetooth",
     "pulseaudio",
-    "cpu",
     "temperature",
     "battery",
     "power-profiles-daemon"
@@ -51,11 +50,6 @@
     }
   },
 
-  "custom/omarchy": {
-    "format": "<span font='Monocraft Nerd Font'>\ue900</span>",
-    "on-click": "omarchy-menu",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
-  },
 
   "custom/update": {
     "format": "",
@@ -66,30 +60,12 @@
     "interval": 3600
   },
 
-  "cpu": {
-    "format": "CPU {icon} {usage}% ",
-    "interval": 2,
-    "on-click": "$TERMINAL -e btop",
-    "format-icons": [
-      "░░░░░░░░░░",
-      "█░░░░░░░░░",
-      "██░░░░░░░░",
-      "███░░░░░░░",
-      "████░░░░░░",
-      "█████░░░░░",
-      "██████░░░░",
-      "███████░░░",
-      "████████░░",
-      "█████████░",
-      "██████████"
-    ]
-  },
 
   "temperature": {
   "interval": 4,
   "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
   "critical-threshold": 85,
-  "format": "TMP {icon} {temperatureC}°C",
+  "format": "CPU {icon} {temperatureC}°C",
   "tooltip": true,
   "tooltip-format": "CPU Temp: {temperatureC}°C",
   "on-click": "$TERMINAL -e btop",
@@ -127,8 +103,8 @@
 
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "format": "{icon} {essid}",
-    "format-wifi": "{icon} {essid}",
+    "format": "{icon}",
+    "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",

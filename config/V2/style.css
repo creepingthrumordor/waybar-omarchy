@@ -44,7 +44,6 @@ window#waybar {
 #backlight,
 #window,
 #mpris,
-#cpu,
 #temperature,
 #custom-update,
 #tray,
@@ -65,7 +64,6 @@ window#waybar {
 
 #clock:hover,
 #mpris:hover,
-#cpu:hover,
 #temperature:hover,
 #custom-update:hover,
 #bluetooth:hover,
@@ -172,10 +170,9 @@ mpris#waybar.empty #mpris {
 
 /* --- Ensure CPU, TEMP, BAT share same gap/box --- */
 
-#cpu,
 #temperature,
 #battery {
-  padding: 0 10px;
+  padding: 0 4px;
   margin: 5px 0;
 }
 
